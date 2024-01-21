@@ -26,6 +26,29 @@
 # Output: [[0,0,0]]
 # Explanation: The only possible triplet sums up to 0.
 
+# Thought:
+# sort
+# for loop遍历 nums
+# left = i+1, right = len(nums) - 1
+# left < right:
+# Sum =  nums[i] + nums[j] + nums[k] == 0.
+# Sum < 0 move left
+# sum > 0 move right
+# sum = 0 return result.append(nums[i], nums[left],nums[right])
+
+# Input: nums = [-1,0,1,2,-1,-4]
+# [-4,-1,-1,0,1,2]
+
+# how to skip duplicate:
+# nums i == nums[i-1]
+# continue
+
+# left == left+1
+# move left
+
+# right == right - 1
+# move right
+
 def threeSum(nums):
     nums.sort()
     result = []

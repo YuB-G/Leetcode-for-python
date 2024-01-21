@@ -16,7 +16,16 @@
 # Thought:
 # left = 0, right = len(height)-1
 # while left < right:
+# left hight < right height:
+#   max(result, left hight * (right - hight))
+#   move left
+# left height > right height:
+#   max (result, right hight * (right - hight))
+#   move right
 
+# i: 0:1, 1:8, 1:8
+# j: 8:7, 8:7, 7:3
+# res: 8, 49,  18
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
