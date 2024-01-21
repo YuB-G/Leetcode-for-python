@@ -28,7 +28,7 @@
 # res: 8, 49,  18
 
 class Solution:
-    def maxArea(self, height: List[int]) -> int:
+    def maxArea(self, height) -> int:
         i, j, res = 0, len(height) - 1, 0
         while i < j:
             if height[i] < height[j]:

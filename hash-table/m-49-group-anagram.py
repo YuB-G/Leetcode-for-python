@@ -34,7 +34,7 @@
 # 所以，哈希表的空间复杂度大约是 O(N*L)。
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs):
         table = {}
         for s in strs:
             s_key = "".join(sorted(s))
