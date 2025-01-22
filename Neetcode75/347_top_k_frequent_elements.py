@@ -40,7 +40,7 @@ class Solution:
         return [item[1] for item in heap]
     
 #时间: counter: O(n)
-        heap: O(logk)
-        result: O(n)
-    total: O(nlogk)
+    #     heap: O(logk)
+    #     result: O(n)
+    # total: O(nlogk)
 # 空间：O（n）
